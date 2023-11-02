@@ -1,0 +1,54 @@
+.card{
+
+    display : inline-block ;
+    border : 4px solid black ;
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;   
+    margin: 15px; 
+}
+
+img {
+    
+    width: 100%;
+    border-radius: 25px;
+
+}
+
+p,
+h3 {
+    text-align: center;
+}
+
+#pets {
+
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+
+span {
+    color : wheat;
+}
+
+span > span {
+    color : black;
+}
+
+@media(max-width : 700px){
+    #pets {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*The below method also works */
+    
+    /* #pets {
+
+        flex-wrap: wrap;
+    } */
+    
+}
+
