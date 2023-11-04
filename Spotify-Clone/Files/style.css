@@ -91,15 +91,103 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .lib-options img {
 
     height: 1.25rem;
-    margin: 1.25rem;
+    margin: 1.5rem;
 }
+
+.lib-options{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.lib-options:hover {
+
+    opacity: 1;
+}
+
 .lib-icon i {
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+}
+
+.lib-icon i:hover {
+    opacity: 1;
+}
+
+
+
+
+#lib-content {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 0rem 0.5rem 0.5rem;
+    justify-content: space-between;
+}
+
+.playlist {
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    background-color: #242424;
+    height: 100px;
+    border-radius: 1rem;
+
+
+
+}
+
+.text p:nth-of-type(2){
+
+    font-size: 13px;
+    font-weight: 590;
+    margin-top: 0.6rem;
+
+    
+}
+
+
+
+.nav-btn button {
+
+    color: black;
+    background-color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+
+.podcast{
+
+    padding: 1rem 1.25rem;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    background-color: #242424;
+    height: 100px;
+    border-radius: 1rem;
+}
+
+.nav-btn button:hover {
+
+    font-size: 12px;    
+    
 }
 
 
@@ -109,7 +197,62 @@ main {
     flex: 1;
     overflow: auto;
     border-radius : 1rem ;
+    margin-top : 10px;
+    margin-right: 10px;
 }
+
+#sticky-nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#nav-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#nav-icons button {
+    font-size: 13px;
+}
+
+#nav-icons button:hover {
+    font-size: 14px;
+}
+
+
+#nav-icons button:not(:first-child){
+
+    font-size: 14px;
+    color: white;
+    background-color: #0000008a;
+}
+
+
+#nav-icons button:nth-child(2) i {
+
+    margin-right: 8px;
+}
+
+#nav-icons button i {
+
+    color: white;
+    padding-top: 3px;
+    
+}
+
+@media(max-width : 1000px){
+    .back-frwd img[alt = "forward"] ,
+    #nav-icons button:nth-child(1) {
+
+        display: none;
+    }
+
+}
+
+
 
 footer {
 
